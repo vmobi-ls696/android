@@ -19,6 +19,16 @@
   <project path="build" name="CyanogenMod/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+
+  <!-- START vmobi-ls696 files needed to build -->
+  <project path="frameworks/base" name="vmobi-ls696/android_frameworks_base" />
+  <project path="device/lge/ls696" name="vmobi-ls696/android_device_lge_ls696" />
+  <project path="device/lge/vm696" name="vmobi-ls696/android_device_lge_vm696" />
+  <project path="device/lge/m3s-common" name="vmobi-ls696/android_device_lge_m3s-common" />
+  <project path="kernel/lge/m3s" name="vmobi-ls696/android_kernel_lge_m3s" />
+  <project path="vendor/lge/m3s" name="vmobi-ls696/android_vendor_lge_m3s" />
+  <!-- FINISH vmobi-ls696 files needed to build -->
+
   <project path="abi/cpp" name="platform/abi/cpp" remote="aosp" revision="refs/tags/android-4.0.4_r2.1" />
   <project path="bionic" name="CyanogenMod/android_bionic" />
   <project path="bootable/bootloader/legacy" name="CyanogenMod/android_bootable_bootloader_legacy" />
@@ -160,7 +170,6 @@
   <project path="external/vim" name="CyanogenMod/android_external_vim" revision="master" />
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" />
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" remote="aosp" revision="refs/tags/android-4.0.4_r2.1" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" />
